@@ -1,0 +1,76 @@
+/* Make the parent container relative to position the shapes behind the link */
+.relative {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Shape Styling */
+  .shape {
+    position: absolute;
+    animation: moveShapes 8s infinite linear;
+    opacity: 0.5;
+  }
+  
+  .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.5);
+  }
+  
+  .square {
+    width: 120px;
+    height: 120px;
+    background-color: rgba(0, 255, 0, 0.5);
+  }
+  
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 120px solid rgba(0, 0, 255, 0.5);
+  }
+  
+  .ellipse {
+    width: 150px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(255, 165, 0, 0.5);
+  }
+  
+  /* Animating shapes in random movement */
+  @keyframes moveShapes {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(200px, 100px);
+    }
+    50% {
+      transform: translate(-100px, 200px);
+    }
+    75% {
+      transform: translate(150px, -50px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
+  .shape:nth-child(1) {
+    animation-duration: 6s;
+  }
+  
+  .shape:nth-child(2) {
+    animation-duration: 8s;
+  }
+  
+  .shape:nth-child(3) {
+    animation-duration: 10s;
+  }
+  
+  .shape:nth-child(4) {
+    animation-duration: 7s;
+  }
+  
