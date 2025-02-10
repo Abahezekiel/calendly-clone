@@ -49,7 +49,9 @@ const Nav = () => {
         >
           Log In
         </Link>
-        <Link className="bg-blue-600 text-white p-2 rounded hover:bg-blue-900 transition-colors duration-300">
+        <Link 
+        to={'/signup'}
+        className="bg-blue-600 text-white p-2 rounded hover:bg-blue-900 transition-colors duration-300">
           Get started
         </Link>
       </div>

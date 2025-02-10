@@ -8,6 +8,8 @@ import Pricing from './Pages/Pricing';
 import Product from './Pages/Product';
 import Solutions from './Pages/Solutions';
 import Enterprise from './Pages/Enterprise';
+import Footer from './Pages/Footer';
+import SignUp from './Pages/SignUp';
 
 
 
@@ -22,9 +24,10 @@ function App() {
         <Route path="product" element = {<Product />} />
         <Route path="solution" element = {<Solutions />} />
         <Route path="enterprise" element = {<Enterprise />} />
-
+<Route path='signup' element={<SignUp />} />
 
       </Routes>
+      <Footer />
     </Router>
   );
 }

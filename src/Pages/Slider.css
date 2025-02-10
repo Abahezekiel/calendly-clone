@@ -1,0 +1,29 @@
+/* Define the continuous sliding animation */
+@keyframes slide {
+  100% {
+    transform: translateX(100%); /* Start from the right (outside of the container) */
+  }
+  100% {
+    transform: translateX(-100%); /* Move left to make the images disappear off the left */
+  }
+}
+
+/* Slider wrapper that hides the overflow */
+.slider-wrapper {
+  display: flex;
+  width: 100%;
+  overflow: hidden; /* Hide the overflowing content */
+}
+
+/* The content that will move */
+.slider-content {
+  display: flex;
+  animation: slide 30s linear infinite; /* Adjust speed (30s for smooth scrolling) */
+}
+
+/* Add some space between the images */
+img {
+  display: block;
+  object-fit: contain;
+  margin-right: 20px; /* space between images */
+}
