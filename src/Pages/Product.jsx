@@ -5,6 +5,8 @@ const Product = () => {
   return (
     <div className='mt-32'>
       <p>product page</p>
+
+
       <ImageSlider />
     </div>
   )
