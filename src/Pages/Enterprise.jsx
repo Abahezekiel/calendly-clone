@@ -57,7 +57,7 @@ const Enterprise = () => {
 
   return (
     <>
-      <div className="flex p-10 pt-[50px]">
+      <div className="flex p-10 pt-[50px] mt-20">
         <div className="bg-white w-1/2">
           <h2 className="text-[#0B3558] text-5xl font-bold w-3/5 leading-tight">
             Solve external scheduling for enterprise
