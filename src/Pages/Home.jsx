@@ -5,8 +5,10 @@ import ImageSwitcher from "./ImageSwitcher";
 import ImageSlider from "../Components/ImageSlider";
 import Slider from "./Slider";
 import { FaArrowRight } from "react-icons/fa";
-import { MdArrowOutward } from "react-icons/md";
+import { MdArrowOutward, MdFilterList } from "react-icons/md";
 import MultipleItems from "../Components/SliderTwo";
+import Button from "../Components/button/Button";
+import { IoIosArrowDown } from "react-icons/io";
 
 const Home = () => {
   return (
@@ -48,6 +50,14 @@ const Home = () => {
             </Link>{" "}
             No Credit Card Required
           </p>
+          <Button
+            title="Filter"
+            beforeIcon={<MdFilterList className="w-4 h-4" />}
+            afterIcon={<IoIosArrowDown className="w-4 h-4" />}
+            onClick={() => alert("Hello World")}
+            type="secondary"
+            extraStyles="p-4 hover:bg-transparent rounded-lg"
+          />
         </div>
         <div className="flex  justify-center items-center ">
           <ImageSwitcher />
@@ -415,27 +425,27 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <Link className="flex gap-3 items-center text-blue-400 font-bold hover:text-gray-950">Learn more on our pricing page <FaArrowRight />
+        <Link className="flex gap-3 items-center text-blue-400 font-bold hover:text-gray-950">
+          Learn more on our pricing page <FaArrowRight />
         </Link>
 
-
         <div className="flex gap-5 w-full mt-6">
-            <div className="text-5xl leading-1 text-blue-950 font-bold">
-                <h1>Discover how businesses grow with Calendly</h1>
-            </div>
+          <div className="text-5xl leading-1 text-blue-950 font-bold">
+            <h1>Discover how businesses grow with Calendly</h1>
+          </div>
+          <div>
+            <h1 className="text-blue-900 leading-1 text-lg mb-2">
+              Learn how teams of all sizes are using Calendly’s scheduling
+              automation platform to create value.
+            </h1>
             <div>
-                <h1 className="text-blue-900 leading-1 text-lg mb-2">Learn how teams of all sizes are using Calendly’s scheduling automation platform to create value.</h1>
-                <div>
-                <Link className="flex gap-3 items-center text-blue-950 font-bold hover:text-gray-950">View customers stories <FaArrowRight />
-                </Link>
-                </div>
+              <Link className="flex gap-3 items-center text-blue-950 font-bold hover:text-gray-950">
+                View customers stories <FaArrowRight />
+              </Link>
             </div>
+          </div>
         </div>
-<div className="w-44">
-
-{/* <MultipleItems  /> */}
-</div>
-        
+        <div className="w-44">{/* <MultipleItems  /> */}</div>
       </div>
     </div>
   );
