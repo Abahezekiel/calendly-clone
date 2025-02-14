@@ -1,5 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
+import image1 from "../Images/Shape1.png";
+import image2 from "../Images/Shape2.png";
+import image3 from "../Images/Shape3.png";
+
+
+
 
 const VonageImage = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -65,8 +71,9 @@ const VonageImage = () => {
           Read now
           <FaArrowRight />
         </span>
+
         <div>
-          <img src="{image}" alt="" />
+
         </div>
       </div>
 
@@ -89,11 +96,14 @@ const VonageImage = () => {
           Read now
           <FaArrowRight />
         </span>
+        <div>
+
+        </div>
       </div>
 
       {/* Third Div */}
       <div
-        className={`bg-white w-2/6 rounded-3xl p-9 border-[#006BFF] border shadow transition-opacity duration-500 ease-out ${
+        className={`bg-white w-2/6 rounded-3xl p-9 border-[#006BFF] relative border shadow transition-opacity duration-500 ease-out ${
           divsVisible[2] ? "opacity-100" : "opacity-0"
         }`}
       >
@@ -110,7 +120,22 @@ const VonageImage = () => {
           Read now
           <FaArrowRight />
         </span>
+
+        <div className="w-[374px] h-[280px] absolute bottom-[-234px] left-[-73px] transform rotate-[80deg]">
+</div>
+
       </div>
+
+
+
+
+
+
+
+
+
+
+
     </div>
   );
 };

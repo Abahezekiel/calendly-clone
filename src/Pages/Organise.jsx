@@ -31,17 +31,21 @@ const Organise = () => {
   // Function to handle border animation end and trigger the next border's animation
   const handleBorderAnimationEnd = (section) => {
     setTimeout(() => {
-      // Trigger the next section's animation in sequence, or loop back to 0 after the last border
-      const nextSection = section === 4 ? 0 : section + 1;
-
-      // Set the next section's width to 100% to animate the next border
-      setBordersWidth((prevState) => ({
-        ...prevState,
-        [nextSection]: "w-[100%]",
-      }));
-
-      // Make the next section visible
-      setVisibleSection(nextSection);
+      // If the section is closed, reset the border width to 0%
+      if (visibleSection !== section) {
+        setBordersWidth((prevState) => ({
+          ...prevState,
+          [section]: "w-[0%]", // Reset the border width
+        }));
+      } else {
+        // If the section is open, animate the next border's width to 100%
+        const nextSection = section === 4 ? 0 : section + 1;
+        setBordersWidth((prevState) => ({
+          ...prevState,
+          [nextSection]: "w-[100%]",
+        }));
+        setVisibleSection(nextSection);
+      }
     }, 1000); // Adjust the timeout to match the animation duration (1000ms)
   };
 
@@ -61,13 +65,8 @@ const Organise = () => {
     return () => clearInterval(intervalId); // Cleanup interval on unmount
   }, []);
 
-
-
   useEffect(() => {
-    const elements = [
-      { id: "oraganiseText", key: "oraganiseText" },
-     
-    ];
+    const elements = [{ id: "oraganiseText", key: "oraganiseText" }];
 
     const observers = elements.map(({ id, key }) => {
       const observer = new IntersectionObserver(
@@ -92,15 +91,15 @@ const Organise = () => {
     };
   }, []);
 
-  
   return (
-    <div id="oraganiseText"
-    className={`flex p-10 pt-[50px] gap-10 transition-all duration-1000 ease-out transform ${
-      isVisible.oraganiseText
-        ? "opacity-100 translate-y-0"
-        : "opacity-0 translate-y-12"
-    }`}>
-         
+    <div
+      id="oraganiseText"
+      className={`flex p-10 pt-[50px] gap-10 transition-all duration-1000 ease-out transform ${
+        isVisible.oraganiseText
+          ? "opacity-100 translate-y-0"
+          : "opacity-0 translate-y-12"
+      }`}
+    >
       <div className="w-1/2">
         {/* Section 1 */}
         <div
@@ -131,7 +130,9 @@ const Organise = () => {
             </span>
           </div>
           <div
-            className={`border-b-2 absolute bottom-0 left-0 ${bordersWidth[0]} ${
+            className={`border-b-2 absolute bottom-0 left-0 ${
+              bordersWidth[0]
+            } ${
               visibleSection === 0 ? "bg-blue-500" : "text-[#A6BBD1]"
             } h-2 transition-all duration-[1000ms]`}
             onTransitionEnd={() => handleBorderAnimationEnd(0)}
@@ -167,7 +168,9 @@ const Organise = () => {
             </span>
           </div>
           <div
-            className={`border-b-2 absolute bottom-0 left-0 ${bordersWidth[1]} ${
+            className={`border-b-2 absolute bottom-0 left-0 ${
+              bordersWidth[1]
+            } ${
               visibleSection === 1 ? "bg-blue-500" : "text-[#A6BBD1]"
             } h-2 transition-all duration-[1000ms]`}
             onTransitionEnd={() => handleBorderAnimationEnd(1)}
@@ -195,7 +198,8 @@ const Organise = () => {
           >
             <p className="text-xl w-5/6 pt-6 font-thin">
               Assign role-based permissions for users, group and account admins,
-              and account owners so everyone has the right level of responsibility.
+              and account owners so everyone has the right level of
+              responsibility.
             </p>
             <span className="mt-5 text-[#0B3558] font-semi-bold text-xl flex gap-3 items-center w-5/6">
               Learn more
@@ -203,7 +207,9 @@ const Organise = () => {
             </span>
           </div>
           <div
-            className={`border-b-2 absolute bottom-0 left-0 ${bordersWidth[2]} ${
+            className={`border-b-2 absolute bottom-0 left-0 ${
+              bordersWidth[2]
+            } ${
               visibleSection === 2 ? "bg-blue-500" : "text-[#A6BBD1]"
             } h-2 transition-all duration-[1000ms]`}
             onTransitionEnd={() => handleBorderAnimationEnd(2)}
@@ -231,7 +237,8 @@ const Organise = () => {
           >
             <p className="text-xl w-5/6 pt-6 font-thin">
               Assign role-based permissions for users, group and account admins,
-              and account owners so everyone has the right level of responsibility.
+              and account owners so everyone has the right level of
+              responsibility.
             </p>
             <span className="mt-5 text-[#0B3558] font-semi-bold text-xl flex gap-3 items-center w-5/6">
               Learn more
@@ -239,7 +246,9 @@ const Organise = () => {
             </span>
           </div>
           <div
-            className={`border-b-2 absolute bottom-0 left-0 ${bordersWidth[3]} ${
+            className={`border-b-2 absolute bottom-0 left-0 ${
+              bordersWidth[3]
+            } ${
               visibleSection === 3 ? "bg-blue-500" : "text-[#A6BBD1]"
             } h-2 transition-all duration-[1000ms]`}
             onTransitionEnd={() => handleBorderAnimationEnd(3)}
@@ -276,7 +285,9 @@ const Organise = () => {
             </span>
           </div>
           <div
-            className={`border-b-2 absolute bottom-0 left-0 ${bordersWidth[4]} ${
+            className={`border-b-2 absolute bottom-0 left-0 ${
+              bordersWidth[4]
+            } ${
               visibleSection === 4 ? "bg-blue-500" : "text-[#A6BBD1]"
             } h-2 transition-all duration-[1000ms]`}
             onTransitionEnd={() => handleBorderAnimationEnd(4)}
