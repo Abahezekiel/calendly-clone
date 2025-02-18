@@ -1,16 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { SignedIn, SignedOut, UserButton } from "@clerk/clerk-react"; // Import Clerk's user-related components
+import Logo from "../Pages/Logo";
 
 const Nav = () => {
   return (
     <div className="flex items-center justify-between px-4 py-4 bg-gray-100 fixed w-full z-10 top-0">
       <Link className="" to={"/"}>
-        <img
-          src="https://marketing-assets.calendly.com/media/logo.svg"
-          alt="Logo"
-          className="w-52"
-        />
+        <Logo/>
       </Link>
       <div className="hidden sm:flex justify-between gap-6">
         <Link to={"/product"} className="text-blue-950 font-bold hover:text-blue-600 transition-colors duration-300">

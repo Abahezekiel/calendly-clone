@@ -1,5 +1,33 @@
 import React, { useState, useEffect } from "react";
-import { FaArrowRight } from "react-icons/fa";
+import OrganizationItem from "./OrganizationItem";
+
+const items = [
+  {
+    id: 0,
+    title: "Automated SSO and SCIM workflows",
+    desc: "Control access, simplify password management, and connect to your Identity Provider to ensure your organization follows IT policies.",
+  },
+  {
+    id: 1,
+    title: "Domain control and account visibility",
+    desc: "Direct employee signups to your primary account where they can use team features and keep company activity in one location.",
+  },
+  {
+    id: 2,
+    title: "Gated permissions and user roles",
+    desc: "  Assign role-based permissions for users, group and account admins, and account owners so everyone has the right level of responsibility.",
+  },
+  {
+    id: 3,
+    title: "Audit log and email auditing capabilities",
+    desc: "Assign role-based permissions for users, group and account admins,and account owners so everyone has the right level of responsibility.",
+  },
+  {
+    id: 4,
+    title: "Enterprise-grade data governance",
+    desc: "Maintain compliance and mitigate risk with capabilities like global retention policies, custom ToS, data deletion, auditing, and more.",
+  },
+];
 
 const Organise = () => {
   // State to manage which section is visible
@@ -28,10 +56,8 @@ const Organise = () => {
     }));
   };
 
-  // Function to handle border animation end and trigger the next border's animation
   const handleBorderAnimationEnd = (section) => {
     setTimeout(() => {
-      // Trigger the next section's animation in sequence, or loop back to 0 after the last border
       const nextSection = section === 4 ? 0 : section + 1;
 
       // Set the next section's width to 100% to animate the next border
@@ -61,13 +87,8 @@ const Organise = () => {
     return () => clearInterval(intervalId); // Cleanup interval on unmount
   }, []);
 
-
-
   useEffect(() => {
-    const elements = [
-      { id: "oraganiseText", key: "oraganiseText" },
-     
-    ];
+    const elements = [{ id: "oraganiseText", key: "oraganiseText" }];
 
     const observers = elements.map(({ id, key }) => {
       const observer = new IntersectionObserver(
@@ -92,200 +113,31 @@ const Organise = () => {
     };
   }, []);
 
-  
   return (
-    <div id="oraganiseText"
-    className={`flex p-10 pt-[50px] gap-10 transition-all duration-1000 ease-out transform ${
-      isVisible.oraganiseText
-        ? "opacity-100 translate-y-0"
-        : "opacity-0 translate-y-12"
-    }`}>
-         
+    <div
+      id="oraganiseText"
+      className={`flex p-10 pt-[50px] gap-10 transition-all duration-1000 ease-out transform ${
+        isVisible.oraganiseText
+          ? "opacity-100 translate-y-0"
+          : "opacity-0 translate-y-12"
+      }`}
+    >
       <div className="w-1/2">
-        {/* Section 1 */}
-        <div
-          className={`bg-white pb-8 cursor-pointer relative ${
-            visibleSection !== 0 ? "text-[#A6BBD1]" : ""
-          }`} // Add background color for inactive sections
-          onClick={() => handleToggle(0)}
-        >
-          <h3
-            className={`text-3xl font-medium mt-4 ${
-              visibleSection !== 0 ? "text-[#A6BBD1]" : "text-[#0B3558]"
-            }`} // Apply color to h3 for inactive sections
-          >
-            Automated SSO and SCIM workflows
-          </h3>
-          <div
-            className={`transition-all duration-[1000ms] max-h-0 overflow-hidden ${
-              visibleSection === 0 ? "max-h-[500px]" : "max-h-0"
-            }`}
-          >
-            <p className="text-xl w-5/6 pt-6 font-thin">
-              Control access, simplify password management, and connect to your
-              Identity Provider to ensure your organization follows IT policies.
-            </p>
-            <span className="mt-5 text-[#0B3558] font-semi-bold text-xl flex gap-3 items-center w-5/6">
-              Learn more
-              <FaArrowRight />
-            </span>
-          </div>
-          <div
-            className={`border-b-2 absolute bottom-0 left-0 ${bordersWidth[0]} ${
-              visibleSection === 0 ? "bg-blue-500" : "text-[#A6BBD1]"
-            } h-2 transition-all duration-[1000ms]`}
-            onTransitionEnd={() => handleBorderAnimationEnd(0)}
-          ></div>
-        </div>
-
-        {/* Section 2 */}
-        <div
-          className={`bg-white border-b-2 pb-8 cursor-pointer relative ${
-            visibleSection !== 1 ? "text-[#A6BBD1]" : ""
-          }`} // Add background color for inactive sections
-          onClick={() => handleToggle(1)}
-        >
-          <h3
-            className={`text-3xl font-medium mt-4 ${
-              visibleSection !== 1 ? "text-[#A6BBD1]" : "text-[#0B3558]"
-            }`} // Apply color to h3 for inactive sections
-          >
-            Domain control and account visibility
-          </h3>
-          <div
-            className={`transition-all duration-[1000ms] max-h-0 overflow-hidden ${
-              visibleSection === 1 ? "max-h-[500px]" : "max-h-0"
-            }`}
-          >
-            <p className="text-xl w-5/6 pt-6 font-thin">
-              Direct employee signups to your primary account where they can use
-              team features and keep company activity in one location.
-            </p>
-            <span className="mt-5 text-[#0B3558] font-semi-bold text-xl flex gap-3 items-center w-5/6">
-              Learn more
-              <FaArrowRight />
-            </span>
-          </div>
-          <div
-            className={`border-b-2 absolute bottom-0 left-0 ${bordersWidth[1]} ${
-              visibleSection === 1 ? "bg-blue-500" : "text-[#A6BBD1]"
-            } h-2 transition-all duration-[1000ms]`}
-            onTransitionEnd={() => handleBorderAnimationEnd(1)}
-          ></div>
-        </div>
-
-        {/* Section 3 */}
-        <div
-          className={`bg-white border-b-2 pb-8 cursor-pointer relative ${
-            visibleSection !== 2 ? "text-[#A6BBD1]" : ""
-          }`} // Add background color for inactive sections
-          onClick={() => handleToggle(2)}
-        >
-          <h3
-            className={`text-3xl font-medium mt-4 ${
-              visibleSection !== 2 ? "text-[#A6BBD1]" : "text-[#0B3558]"
-            }`} // Apply color to h3 for inactive sections
-          >
-            Gated permissions and user roles
-          </h3>
-          <div
-            className={`transition-all duration-[1000ms] max-h-0 overflow-hidden ${
-              visibleSection === 2 ? "max-h-[500px]" : "max-h-0"
-            }`}
-          >
-            <p className="text-xl w-5/6 pt-6 font-thin">
-              Assign role-based permissions for users, group and account admins,
-              and account owners so everyone has the right level of responsibility.
-            </p>
-            <span className="mt-5 text-[#0B3558] font-semi-bold text-xl flex gap-3 items-center w-5/6">
-              Learn more
-              <FaArrowRight />
-            </span>
-          </div>
-          <div
-            className={`border-b-2 absolute bottom-0 left-0 ${bordersWidth[2]} ${
-              visibleSection === 2 ? "bg-blue-500" : "text-[#A6BBD1]"
-            } h-2 transition-all duration-[1000ms]`}
-            onTransitionEnd={() => handleBorderAnimationEnd(2)}
-          ></div>
-        </div>
-
-        {/* Section 4 */}
-        <div
-          className={`bg-white border-b-2 pb-8 cursor-pointer relative ${
-            visibleSection !== 3 ? "text-[#A6BBD1]" : ""
-          }`} // Add background color for inactive sections
-          onClick={() => handleToggle(3)}
-        >
-          <h3
-            className={`text-3xl font-medium mt-4 ${
-              visibleSection !== 3 ? "text-[#A6BBD1]" : "text-[#0B3558]"
-            }`} // Apply color to h3 for inactive sections
-          >
-            Audit log and email auditing capabilities
-          </h3>
-          <div
-            className={`transition-all duration-[1000ms] max-h-0 overflow-hidden ${
-              visibleSection === 3 ? "max-h-[500px]" : "max-h-0"
-            }`}
-          >
-            <p className="text-xl w-5/6 pt-6 font-thin">
-              Assign role-based permissions for users, group and account admins,
-              and account owners so everyone has the right level of responsibility.
-            </p>
-            <span className="mt-5 text-[#0B3558] font-semi-bold text-xl flex gap-3 items-center w-5/6">
-              Learn more
-              <FaArrowRight />
-            </span>
-          </div>
-          <div
-            className={`border-b-2 absolute bottom-0 left-0 ${bordersWidth[3]} ${
-              visibleSection === 3 ? "bg-blue-500" : "text-[#A6BBD1]"
-            } h-2 transition-all duration-[1000ms]`}
-            onTransitionEnd={() => handleBorderAnimationEnd(3)}
-          ></div>
-        </div>
-
-        {/* Section 5 */}
-        <div
-          className={`bg-white border-b-2 pb-8 cursor-pointer relative ${
-            visibleSection !== 4 ? "text-[#A6BBD1]" : ""
-          }`} // Add background color for inactive sections
-          onClick={() => handleToggle(4)}
-        >
-          <h3
-            className={`text-3xl font-medium mt-4 ${
-              visibleSection !== 4 ? "text-[#A6BBD1]" : "text-[#0B3558]"
-            }`} // Apply color to h3 for inactive sections
-          >
-            Enterprise-grade data governance
-          </h3>
-          <div
-            className={`transition-all duration-[1000ms] max-h-0 overflow-hidden ${
-              visibleSection === 4 ? "max-h-[500px]" : "max-h-0"
-            }`}
-          >
-            <p className="text-xl w-5/6 pt-6 font-thin">
-              Maintain compliance and mitigate risk with capabilities like
-              global retention policies, custom ToS, data deletion, auditing,
-              and more.
-            </p>
-            <span className="mt-5 text-[#0B3558] font-semi-bold text-xl flex gap-3 items-center w-5/6">
-              Learn more
-              <FaArrowRight />
-            </span>
-          </div>
-          <div
-            className={`border-b-2 absolute bottom-0 left-0 ${bordersWidth[4]} ${
-              visibleSection === 4 ? "bg-blue-500" : "text-[#A6BBD1]"
-            } h-2 transition-all duration-[1000ms]`}
-            onTransitionEnd={() => handleBorderAnimationEnd(4)}
-          ></div>
-        </div>
+        {items.map((item) => {
+          return (
+            <OrganizationItem
+              key={item.id}
+              item={item}
+              isVisible={item.id === visibleSection}
+              handleToggle={handleToggle}
+              handleBorderAnimationEnd={handleBorderAnimationEnd}
+              bordersWidth={bordersWidth}
+            />
+          );
+        })}
       </div>
 
       <div className="bg-white w-1/2 pt-[50px]">
-        {/* Optionally, you can display images or other content when a section is clicked */}
         {visibleSection === 0 && (
           <img
             src="https://images.ctfassets.net/k0lk9kiuza3o/6ooJOE407ik4uCRvHaSytu/d45504bb751be34bb8c0497052d2e42a/Calendly-Secure-User-Management-2__1_.png?w=1300&q=85&fm=webp"
