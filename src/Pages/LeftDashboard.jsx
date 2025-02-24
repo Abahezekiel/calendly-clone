@@ -158,7 +158,7 @@ const LeftDashboard = () => {
       <div
         className={`w-${
           isCollapsed ? "16" : "1/5"
-        } border-r border-blue-100 transition-all duration-300`}
+        }  border-r border-blue-100 transition-all duration-300`}
       >
         <div className="flex justify-between items-center pt-5 p-3 ">
           {/* Logo and collapsed state handling */}
@@ -214,58 +214,6 @@ const LeftDashboard = () => {
           ))}
         </div>
       </div>
-
-      {/* {isModalOpen && (
-        <div className="fixed inset-0   bg-opacity-50 flex  items-center z-50 pb-28">
-          <div className="bg-white border border-blue-100 rounded-lg shadow-sm w-80 p-6">
-            <h2 className="text-lg font-semibold mb-4">EVENT TYPES</h2>
-            <form>
-              <div className="mb-4">
-                <label
-                  htmlFor="event-name"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  Event Name
-                </label>
-                <input
-                  type="text"
-                  id="event-name"
-                  className="w-full p-2 border border-gray-300 rounded-md"
-                  placeholder="Enter event name"
-                />
-              </div>
-              <div className="mb-4">
-                <label
-                  htmlFor="event-description"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  Event Description
-                </label>
-                <textarea
-                  id="event-description"
-                  className="w-full p-2 border border-gray-300 rounded-md"
-                  placeholder="Enter event description"
-                />
-              </div>
-              <div className="flex justify-end gap-2">
-                <button
-                  type="button"
-                  className="px-4 py-2 bg-gray-300 text-gray-700 rounded-md"
-                  onClick={handleModalToggle} // Close the modal
-                >
-                  Cancel
-                </button>
-                <button
-                  type="submit"
-                  className="px-4 py-2 bg-blue-600 text-white rounded-md"
-                >
-                  Create
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      )} */}
 
       <CreateModal
         isModalOpen={isModalOpen}

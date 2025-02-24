@@ -14,7 +14,7 @@ const Dashboard = () => {
     <div className=" flex w-full ">
       <LeftDashboard />
 
-      {/* <RightDashboard /> */}
+     
     </div>
   );
 };

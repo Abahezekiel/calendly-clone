@@ -3,7 +3,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { IoIosArrowDown } from "react-icons/io";
 import Button from "../Components/button/Button";
 
-const CreateModal = ({ isModalOpen, handleModalToggle }) => {
+const NewEventModal = ({ isModalOpen, handleModalToggle }) => {
   const [eventName, setEventName] = useState("");
   const [eventDescription, setEventDescription] = useState("");
   const [isAdminVisible, setIsAdminVisible] = useState(false); // State to track visibility of admin templates
@@ -84,7 +84,7 @@ const CreateModal = ({ isModalOpen, handleModalToggle }) => {
       <div className="fixed inset-0 bg-opacity-50 flex items-center z-50 ">
         <div
           ref={modalRef}
-          className="bg-white border border-blue-100 rounded-lg shadow-md p-3 mt-14 ml-2 max-h-[80vh] overflow-y-auto "
+          className="bg-white border border-blue-100 rounded-lg shadow-md p-3 mt-[13rem] w-96 ml-[50rem] max-h-[80vh] overflow-y-auto "
         >
           <h2 className="text-xs font-semibold  p-3">EVENT TYPES</h2>
           <div className="border-b border-gray-400">
@@ -190,4 +190,4 @@ const CreateModal = ({ isModalOpen, handleModalToggle }) => {
   );
 };
 
-export default CreateModal;
+export default NewEventModal;
