@@ -2,7 +2,7 @@
 
 import React from "react";
 
-function Button({ title, onClick, beforeIcon, afterIcon, type, extraStyles, logo }) {
+function Invite({ title, textOne, textTwo, textThree, onClick, beforeIcon, afterIcon, type, extraStyles,   }) {
   const buttonStyles = {
     neutral: "",
     primary: "bg-blue-500 hover:bg-blue-800 text-white",
@@ -12,15 +12,15 @@ function Button({ title, onClick, beforeIcon, afterIcon, type, extraStyles, logo
   return (
     <button
       onClick={onClick}
-      className={`flex gap-3 items-center p-2  rounded-full ${buttonStyles[type]} ${extraStyles}`}
+      className={` gap-3 items-center p-4  rounded-md ${buttonStyles[type]} ${extraStyles}`}
     >
-      <span>{beforeIcon}</span>
       <span> {title}</span>
+      <span> {textOne}</span>
+      <span> {textTwo}</span>
+      <span> {textThree}</span>
       <span>{afterIcon}</span>
-      {/* Always render the logo if passed */}
-      {logo && <span>{logo}</span>}
     </button>
   );
 }
 
-export default Button;
+export default Invite;
