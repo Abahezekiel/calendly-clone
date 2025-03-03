@@ -37,4 +37,8 @@
   }
 }
 
+/* App.css or index.css */
+@import "flatpickr/dist/flatpickr.min.css";
+
+
 

@@ -19,6 +19,9 @@ import EventModal from "./EventModal";
 import NewEventModal from "./NewEventModal";
 import CopyModal from "./CopyModal";
 import HelpModal from "./HelpModal";
+import { Link } from "react-router-dom";
+import UpgradeDash from "./UpgradeDash";
+import AdminCenterDash from "./AdminCenterDash";
 
 const RightDashboard = ({ clickedIndex }) => {
   const [openModal, setOpenModal] = useState(null); // State to track which modal is open
@@ -143,23 +146,32 @@ const RightDashboard = ({ clickedIndex }) => {
           <RoutingDash />
         </div>
 
-        <div className={` w-full ${clickedIndex === 7 ? "" : "hidden"}`}>
-          {/* <UpgradeDash /> */}
-        </div>
+        <Link to="/UpgradeDash">
+          <div className={` w-full ${clickedIndex === 7 ? "" : "hidden"}`}>
+            {/* <UpgradeDash /> */}
+            <Button
+              title="Go to Upgrade"
+              extraStyles="w-full bg-blue-500 text-white p-2 rounded-sm w-10"
+            />
+          </div>
+        </Link>
 
         <div className={` w-full ${clickedIndex === 8 ? "" : "hidden"}`}>
           <AnalyticsDash />
         </div>
 
+        <Link to="/AdminCenterDash">
         <div className={` w-full ${clickedIndex === 9 ? "" : "hidden"}`}>
-          {/* <AdminDash /> */}
+          {/* <AdminCenterDash /> */}
+          <Button
+              title="Go to Admin Center"
+              extraStyles="w-full bg-blue-500 text-white p-2 rounded-sm w-10"
+            />
         </div>
+        </Link>
 
-        <div
-          className={` w-full ${clickedIndex === 10 ? "" : "hidden"}`}>
-        
+        <div className={` w-full ${clickedIndex === 10 ? "" : "hidden"}`}>
           <HelpModal />
-        
         </div>
       </div>
 
@@ -182,7 +194,7 @@ const RightDashboard = ({ clickedIndex }) => {
           handleModalToggle={() => handleModalToggle("copy")}
         />
       )}
-        {/* {openModal === "help" && (
+      {/* {openModal === "help" && (
         <HelpModal
           isModalOpen={openModal === "help"}
           handleModalToggle={() => handleModalToggle("help")}
