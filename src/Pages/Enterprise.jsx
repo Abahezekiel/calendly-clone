@@ -13,6 +13,7 @@ import VonageImage from "./VonageImage";
 import CompleteImage from "./CompleteImage";
 import HackerOne from "./HackerOne";
 import NextGen from "./NextGen";
+import OrganiseDisplay from "../Components/OrganiseDisplay";
 
 const Enterprise = () => {
   const [isVisible, setIsVisible] = useState({
@@ -129,7 +130,8 @@ const Enterprise = () => {
           Built to keep your organization secure
         </h2>
       </div>
-      <Organise />
+      <OrganiseDisplay />
+
 
       <div className="flex items-center justify-center">
         <h2

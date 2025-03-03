@@ -9,6 +9,9 @@ import { MdArrowOutward, MdFilterList } from "react-icons/md";
 import MultipleItems from "../Components/SliderTwo";
 import Button from "../Components/button/Button";
 import { IoIosArrowDown } from "react-icons/io";
+import FirstProp from "../Components/FirstProp";
+import ConnectDisplay from "../Components/ConnectDisplay";
+import CardSlider from "../Components/CardSlider";
 
 const Home = () => {
   return (
@@ -74,22 +77,18 @@ const Home = () => {
       <div>
         <Slider />
       </div>
-      <div className="flex flex-col items-center justify-center  px-6 py-12  w-[50%] m-auto text-center">
-        <h1 className="text md:text-6xl lg:text-7xl text-blue-950 font-bold text-center mb-4 leading-7">
-          Calendly makes scheduling simple
-        </h1>
-        <p className="text-lg md:text-xl text-blue-950 text-center mb-8 max-w-3xl">
-          Calendly’s easy enough for individual users, and powerful enough to
-          meet the needs of enterprise organizations — including 86% of the
-          Fortune 500 companies.
-        </p>
-        <Link
-          className="bg-blue-800 text-white text-lg font-semibold px-8 py-3 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105 hover:bg-blue-700"
-          to="/signup"
-        >
-          Sign up for free
-        </Link>
-      </div>
+     
+      <FirstProp
+        title="Calendly makes scheduling simple"
+        description="Calendly’s easy enough for individual users, and powerful enough to meet the needs of enterprise organizations — including 86% of the Fortune 500 companies."
+        signUpText="Sign up for free"
+        showDemoButton={false}
+      >
+       
+      </FirstProp>
+
+<ConnectDisplay />
+
 
       <div className=" mx-12">
         <div className="grid grid-cols-2 items-center gap-3 leading-9">
@@ -281,22 +280,18 @@ const Home = () => {
           </Link>
         </div>
 
-        <div className="flex flex-col items-center justify-center  px-6 py-12  w-[50%] m-auto text-center">
-          <h1 className="text md:text-6xl lg:text-7xl text-blue-950 font-bold text-center mb-4 leading-7">
-            More than a scheduling link
-          </h1>
-          <p className="text-lg md:text-xl text-blue-900 text-center mb-8 max-w-3xl">
-            Calendly’s functionality goes way beyond just a scheduling link,
-            with customizable, automated features to help you and your team
-            achieve goals faster.
-          </p>
-          <Link
-            className="bg-blue-800 text-white text-lg font-semibold px-8 py-3 rounded-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105 hover:bg-blue-700"
-            to="/signup"
-          >
-            Sign up for free
-          </Link>
-        </div>
+       
+        <FirstProp
+        title="More than a scheduling link"
+        description="Calendly’s functionality goes way beyond just a scheduling link, with customizable, automated features to help you and your team achieve goals faster."
+        signUpText="Sign up for free"
+        showDemoButton={false}
+      >
+       
+      </FirstProp>
+
+<ConnectDisplay />
+
 
         <div className="">
           <h1 className="text-5xl text-blue-950 font-bold  mb-4 leading-1  w-[45%] p-4">
@@ -446,6 +441,8 @@ const Home = () => {
           </div>
         </div>
         <div className="w-44">{/* <MultipleItems  /> */}</div>
+<CardSlider />
+
       </div>
     </div>
   );
