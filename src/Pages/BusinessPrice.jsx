@@ -15,28 +15,28 @@ const BusinessPrice = () => {
         <Button
             afterIcon={<FaCheckCircle />}
             type="secondary"
-            extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+            extraStyles="hover:bg-slate-100 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
           />
         </p>
         <p className="w-72   p-5 bg-slate-100 items-center justify-center text-center">
         <Button
             afterIcon={<FaCheckCircle />}
             type="secondary"
-            extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+            extraStyles="hover:bg-slate-100 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
           />
         </p>
         <p className="w-72 p-5 bg-slate-100 items-center justify-center text-center">
           <Button
             afterIcon={<FaCheckCircle />}
             type="secondary"
-            extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+            extraStyles="hover:bg-slate-100 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
           />
         </p>
         <p className="w-72 p-5 bg-slate-100 items-center justify-center text-center">
           <Button
             afterIcon={<FaCheckCircle />}
             type="secondary"
-            extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+            extraStyles="hover:bg-slate-100 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
           />
         </p>
       </div>
@@ -49,28 +49,28 @@ const BusinessPrice = () => {
         <Button
             afterIcon={<FaCheckCircle />}
             type="secondary"
-            extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+            extraStyles="hover:bg-slate-100 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
           />
         </p>
         <p className="w-72   p-5 bg-slate-100 items-center justify-center text-center">
         <Button
             afterIcon={<FaCheckCircle />}
             type="secondary"
-            extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+            extraStyles="hover:bg-slate-100 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
           />
         </p>
         <p className="w-72 p-5 bg-slate-100 items-center justify-center text-center">
           <Button
             afterIcon={<FaCheckCircle />}
             type="secondary"
-            extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+            extraStyles="hover:bg-slate-100 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
           />
         </p>
         <p className="w-72 p-5 bg-slate-100 items-center justify-center text-center">
           <Button
             afterIcon={<FaCheckCircle />}
             type="secondary"
-            extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+            extraStyles="hover:bg-slate-100 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
           />
         </p>
       </div>
@@ -83,28 +83,28 @@ const BusinessPrice = () => {
         <Button
             afterIcon={<FaCheckCircle />}
             type="secondary"
-            extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+            extraStyles="hover:bg-slate-100 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
           />
         </p>
         <p className="w-72   p-5 bg-slate-100 items-center justify-center text-center">
         <Button
             afterIcon={<FaCheckCircle />}
             type="secondary"
-            extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+            extraStyles="hover:bg-slate-100 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
           />
         </p>
         <p className="w-72 p-5 bg-slate-100 items-center justify-center text-center">
           <Button
             afterIcon={<FaCheckCircle />}
             type="secondary"
-            extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+            extraStyles="hover:bg-slate-100 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
           />
         </p>
         <p className="w-72 p-5 bg-slate-100 items-center justify-center text-center">
           <Button
             afterIcon={<FaCheckCircle />}
             type="secondary"
-            extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+            extraStyles="hover:bg-slate-100 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
           />
         </p>
       </div>
@@ -116,21 +116,21 @@ const BusinessPrice = () => {
         <Button
             afterIcon={<FaCheckCircle />}
             type="secondary"
-            extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+            extraStyles="hover:bg-slate-100 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
           />
         </p>
         <p className="w-72 p-5 bg-slate-100 items-center justify-center text-center">
           <Button
             afterIcon={<FaCheckCircle />}
             type="secondary"
-            extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+            extraStyles="hover:bg-slate-100 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
           />
         </p>
         <p className="w-72 p-5 bg-slate-100 items-center justify-center text-center">
           <Button
             afterIcon={<FaCheckCircle />}
             type="secondary"
-            extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+            extraStyles="hover:bg-slate-100 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
           />
         </p>
       </div>
@@ -148,7 +148,7 @@ const BusinessPrice = () => {
           <Button
             afterIcon={<FaCheckCircle />}
             type="secondary"
-            extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+            extraStyles="hover:bg-slate-100 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
           />
         </p>
       </div>
@@ -166,7 +166,7 @@ const BusinessPrice = () => {
           <Button
             afterIcon={<FaCheckCircle />}
             type="secondary"
-            extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+            extraStyles="hover:bg-slate-100 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
           />
         </p>
       </div>
@@ -184,7 +184,7 @@ const BusinessPrice = () => {
           <Button
             afterIcon={<FaCheckCircle />}
             type="secondary"
-            extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+            extraStyles="hover:bg-slate-100 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
           />
         </p>
       </div>
@@ -202,7 +202,7 @@ const BusinessPrice = () => {
           <Button
             afterIcon={<FaCheckCircle />}
             type="secondary"
-            extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+            extraStyles="hover:bg-slate-100 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
           />
         </p>
       </div>
@@ -220,7 +220,7 @@ const BusinessPrice = () => {
           <Button
             afterIcon={<FaCheckCircle />}
             type="secondary"
-            extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+            extraStyles="hover:bg-slate-100 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
           />
         </p>
       </div>
@@ -238,7 +238,7 @@ const BusinessPrice = () => {
           <Button
             afterIcon={<FaCheckCircle />}
             type="secondary"
-            extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+            extraStyles="hover:bg-slate-100 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
           />
         </p>
       </div>

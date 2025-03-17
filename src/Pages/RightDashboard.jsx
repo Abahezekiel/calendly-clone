@@ -33,7 +33,7 @@ const RightDashboard = ({ clickedIndex }) => {
 
   return (
     <>
-      <div className=" w-full bg-gray-50">
+       <div className="pl-[20%] bg-gray-50 w-full h-screen overflow-y-auto">
         {/* First Tab (Index 0) */}
         <div
           className={` w-full ${
@@ -147,7 +147,9 @@ const RightDashboard = ({ clickedIndex }) => {
         </div>
 
         <Link to="/UpgradeDash">
-          <div className={` w-full ${clickedIndex === 7 ? "" : "hidden"}`}>
+          <div className=
+          {` w-full ${clickedIndex === 7 ? "" : "hidden"}`}
+          >
             {/* <UpgradeDash /> */}
             <Button
               title="Go to Upgrade"
@@ -163,10 +165,11 @@ const RightDashboard = ({ clickedIndex }) => {
         <Link to="/AdminCenterDash">
         <div className={` w-full ${clickedIndex === 9 ? "" : "hidden"}`}>
           {/* <AdminCenterDash /> */}
-          <Button
+          {/* <Button
               title="Go to Admin Center"
               extraStyles="w-full bg-blue-500 text-white p-2 rounded-sm w-10"
-            />
+            /> */}
+            
         </div>
         </Link>
 
@@ -194,12 +197,13 @@ const RightDashboard = ({ clickedIndex }) => {
           handleModalToggle={() => handleModalToggle("copy")}
         />
       )}
-      {/* {openModal === "help" && (
+      {openModal === "help" && (
         <HelpModal
           isModalOpen={openModal === "help"}
           handleModalToggle={() => handleModalToggle("help")}
         />
-      )} */}
+        
+      )}
     </>
   );
 };

@@ -76,7 +76,11 @@ const Accomplish = () => {
           >
             <h3 className="font-medium text-[#0B3558] text-2xl">{item.title}</h3>
             <p className="text-xl pt-5 text-[#6E88A2] font-extralight">{item.description}</p>
-            <span className="mt-9 text-[#006BFF] font-medium text-lg flex gap-3 items-center group-hover:text-[#0B3558] ">
+            <span
+              className={`${
+                index === 0 || index === 2 ? "mt-14" : "mt-6"
+              } text-[#006BFF] font-medium text-lg flex gap-3 items-center group-hover:text-[#0B3558] `}
+            >
               {item.linkText}
               <FaArrowRight className="transition-transform duration-300 transform group-hover:translate-x-1" />
             </span>

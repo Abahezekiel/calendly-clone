@@ -13,7 +13,7 @@ const EventModal = ({ isModalOpen, handleModalToggle }) => {
   const [eventDescription, setEventDescription] = useState("");
   const [isAdminVisible, setIsAdminVisible] = useState(false); // State to track visibility of admin templates
   const [isMoreWaysVisible, setIsMoreWaysVisible] = useState(false); // State to track visibility of "more ways to meet"
-
+  
   // Ref to track modal container
   const modalRef = useRef(null);
 
@@ -36,41 +36,10 @@ const EventModal = ({ isModalOpen, handleModalToggle }) => {
     };
   }, [isModalOpen, handleModalToggle]);
 
-  // Admin items only (no "Round Robin" or "Collective")
-  const adminItems = [
-    {
-      title: "One-on-One",
-      textOne: "1 host",
-      textTwo: "Good for coffee chats, 1:1 interviews, etc.",
-      textThree: "1 invitee",
-      afterIcon: <FaArrowRightLong className="w-4 h-4 font-semibold" />,
-    },
-    {
-      title: "Group",
-      textOne: "1 host",
-      textTwo: "Webinars, Online classes, etc.",
-      textThree: "Multiple invitees",
-      afterIcon: <FaArrowRightLong className="w-4 h-4 font-semibold" />,
-    },
-    {
-      title: "Round Robin",
-      textOne: "1 host",
-      textTwo: "Webinars, Online classes, etc.",
-      textThree: "Multiple invitees",
-      afterIcon: <FaArrowRightLong className="w-4 h-4 font-semibold" />,
-    },
-  ];
+  
+ 
 
-  // Toggle visibility logic for Admin Templates and More Ways to Meet
-  const toggleSectionVisibility = (section) => {
-    if (section === "admin") {
-      setIsAdminVisible((prev) => !prev);
-      setIsMoreWaysVisible(false); // Close More Ways to Meet when Admin Templates is opened
-    } else if (section === "moreWays") {
-      setIsMoreWaysVisible((prev) => !prev);
-      setIsAdminVisible(false); // Close Admin Templates when More Ways to Meet is opened
-    }
-  };
+ 
   return (
     isModalOpen && (
       <div className="fixed inset-0 bg-opacity-50 flex items-center z-50 ">
@@ -85,7 +54,7 @@ const EventModal = ({ isModalOpen, handleModalToggle }) => {
                 <FiEdit2 className="w-6 h-6 font-extrabold text-black" />
               }
               type="secondary"
-              extraStyles=" rounded-full flex items-center justify-center text-black font-light text-sm border-none"
+              extraStyles="hover:bg-white rounded-full flex items-center justify-center text-black font-light text-sm border-none"
             />
             <Button
               title="Change Language"
@@ -94,7 +63,7 @@ const EventModal = ({ isModalOpen, handleModalToggle }) => {
                 <BiWorld className="w-6 h-6 font-extrabold text-black" />
               }
               type="secondary"
-              extraStyles=" rounded-full flex items-center justify-center text-black font-light text-sm border-none"
+              extraStyles="hover:bg-white rounded-full flex items-center justify-center text-black font-light text-sm border-none"
             />
 
             <Button
@@ -103,7 +72,7 @@ const EventModal = ({ isModalOpen, handleModalToggle }) => {
                 <FaRegNoteSticky className="w-6 h-6 font-extrabold text-black" />
               }
               type="secondary"
-              extraStyles=" rounded-full flex items-center justify-center text-black font-light text-sm border-none"
+              extraStyles="hover:bg-white rounded-full flex items-center justify-center text-black font-light text-sm border-none"
             />
 
             <Button
@@ -112,7 +81,7 @@ const EventModal = ({ isModalOpen, handleModalToggle }) => {
                 <FiEyeOff className="w-6 h-6 font-extrabold text-black" />
               }
               type="secondary"
-              extraStyles=" rounded-full flex items-center justify-center text-black font-light text-sm border-none"
+              extraStyles="hover:bg-white rounded-full flex items-center justify-center text-black font-light text-sm border-none"
             />
             <Button
               title="Clone"
@@ -120,7 +89,7 @@ const EventModal = ({ isModalOpen, handleModalToggle }) => {
                 <PiCopySimple className="w-6 h-6 font-extrabold text-black" />
               }
               type="secondary"
-              extraStyles=" rounded-full flex items-center justify-center text-black font-light text-sm border-none"
+              extraStyles="hover:bg-white rounded-full flex items-center justify-center text-black font-light text-sm border-none"
             />
             <Button
               title="Delete"
@@ -128,7 +97,7 @@ const EventModal = ({ isModalOpen, handleModalToggle }) => {
                 <RiDeleteBin6Line className="w-6 h-6 font-extrabold text-black" />
               }
               type="secondary"
-              extraStyles=" rounded-full flex items-center justify-center text-black font-light text-sm border-none"
+              extraStyles="hover:bg-white rounded-full flex items-center justify-center text-black font-light text-sm border-none"
             />
             <div className="flex justify-between items-center m-3 border-t border-gray-400">
               <p>On/Off</p>

@@ -56,12 +56,12 @@ const HelpResources = () => {
           <Button
             title="Help Center"
             type="secondary"
-            extraStyles="rounded-md flex items-center justify-center bg-blue-600 text-white font-normal text-xl border-none h-14 whitespace-nowrap"
+            extraStyles="rounded-md flex items-center justify-center bg-blue-600 hover:bg-blue-500 text-white font-normal text-xl border-none h-14 whitespace-nowrap"
           />
           <Button
             title="Contact Us"
             type="secondary"
-            extraStyles="rounded-md flex items-center justify-center bg-white text-gray-500 font-normal text-xl border-gray-500 h-14 whitespace-nowrap"
+            extraStyles="rounded-md flex items-center justify-center bg-white text-gray-500 font-normal text-xl border-gray-500 h-14 whitespace-nowrap hover:bg-white"
           />
         </div>
       </div>

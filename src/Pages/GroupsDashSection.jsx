@@ -29,12 +29,12 @@ const GroupsDashSection = () => {
             <CiDollar className="w-6 h-6 font-extrabold text-blue-600" />
           }
           type="secondary"
-          extraStyles=" rounded-full flex   text-black font-light text-sm border-none"
+          extraStyles="hover:bg-transparent rounded-full flex   text-black font-light text-sm border-none"
         />
         <Button
           title="Explore the Standard plan"
           type="secondary"
-          extraStyles="bg-blue-600  rounded-full flex items-center justify-center text-white font-normal text-sm border-none h-11"
+          extraStyles="hover:bg-blue-500 bg-blue-600  rounded-full flex items-center justify-center text-white font-normal text-sm border-none h-11"
         />
       </div>
 

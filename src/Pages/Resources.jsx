@@ -100,7 +100,7 @@ const Resources = () => {
               <Button
                 title="Featured"
                 type="secondary"
-                extraStyles="bg-blue-100 rounded-full flex items-center justify-center text-blue-900 font-light text-xs border-none h-6"
+                extraStyles="bg-blue-100 hover:bg-blue-200 rounded-full flex items-center justify-center text-blue-900 hover:text-blue-900 font-light text-xs border-none h-6"
               />
               <p className="pt-3 pb-3 text-blue-950 font-semibold text-2xl">
                 The State of Meetings 2024
@@ -110,7 +110,7 @@ const Resources = () => {
                   afterIcon={<FaArrowRight />}
                   title="Read the report"
                   type="secondary"
-                  extraStyles="rounded-full flex items-center justify-center text-blue-950 font-normal text-xl border-none h-6"
+                  extraStyles="hover:bg-slate-50 rounded-full flex items-center justify-center text-blue-950 font-normal text-xl border-none h-6"
                 />
               </div>
             </div>
@@ -222,11 +222,12 @@ const Resources = () => {
               you covered.
             </p>
             <div className="pt-5">
-              <Button
-                title="Watch Tutorials"
-                type="secondary"
-                extraStyles="rounded-md flex items-center justify-center bg-blue-600 text-white font-normal text-xl border-none h- "
-              />
+            <Button
+  title="Watch Tutorials"
+  type="secondary"
+  extraStyles="bg-blue-600 hover:bg-blue-500 rounded-md flex items-center justify-center text-white font-normal text-xl border-none h-12"
+/>
+
             </div>
           </div>
         </div>

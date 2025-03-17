@@ -40,17 +40,17 @@ const DayInput = ({ day, startPlaceholder, endPlaceholder }) => (
       <Button
         beforeIcon={<LiaTimesSolid className="w-4 h-4" />}
         type="secondary"
-        extraStyles="bg-none border-none items-center "
+        extraStyles="hover:bg-slate-50 border-none items-center "
       />
       <Button
         beforeIcon={<CiCirclePlus className="w-4 h-4" />}
         type="secondary"
-        extraStyles="bg-none border-none items-center "
+        extraStyles="hover:bg-slate-50 border-none items-center "
       />
       <Button
         beforeIcon={<PiCopySimple className="w-4 h-4" />}
         type="secondary"
-        extraStyles="bg-none border-none items-center "
+        extraStyles="hover:bg-slate-50 border-none items-center "
       />
     </span>
   </div>
@@ -62,7 +62,7 @@ const TimeZoneButton = () => (
     <Button
       beforeIcon={<FaAngleDown className="w-4 h-4" />}
       type="secondary"
-      extraStyles="bg-none border-none items-center "
+      extraStyles="hover:bg-slate-50 border-none items-center "
     />
   </div>
 );

@@ -56,7 +56,7 @@ const WorkflowsDash = () => {
         <Button
           title="Explore the Standard plan"
           type="secondary"
-          extraStyles="bg-blue-600 rounded-full flex items-center justify-center text-white font-normal text-sm border-none h-11"
+          extraStyles="hover:bg-blue-500 bg-blue-600 rounded-full flex items-center justify-center text-white font-normal text-sm border-none h-11"
         />
       </div>
       <div className="m-7 w-[50rem] ">
@@ -64,7 +64,7 @@ const WorkflowsDash = () => {
           title="My Calendly"
           afterIcon={<MdKeyboardArrowDown className="w-4 h-4" />}
           type="secondary"
-          extraStyles="p-10 hover:bg-white rounded-md w- flex items-center justify-center text-black font-light text-md border-gray-300 "
+          extraStyles="p-10 hover:bg-slate-50 rounded-md w- flex items-center justify-center text-black font-light text-md border-gray-300 "
         />
       </div>
       <div className="flex items-center justify-center flex-col ">
@@ -112,7 +112,7 @@ const WorkflowsDash = () => {
               <Button
                 title="Add Workflow"
                 type="secondary"
-                extraStyles="bg-blue-700 rounded-full flex items-center justify-center text-white font-light text-xs border-none text-blue-700"
+                extraStyles="hover:bg-blue-500 bg-blue-700 rounded-full flex items-center justify-center text-white font-light text-xs border-none text-blue-700"
               />
             </div>
           </div>

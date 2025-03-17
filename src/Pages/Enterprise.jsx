@@ -164,52 +164,60 @@ const Enterprise = () => {
       <NextGen/>
 
 
-      <div className="bg-[#F8F9FB] mt-20 p-28 flex ">
-        <div className="flex p-10 pt-[50px] w-full  gap-10 ">
-          <div className=" w-1/2 ">
-            <button className="bg-[#E6F0FF] text-[#3672CA] rounded-2xl px-3 py-1 mt-2">
-              Contact our sales team
-            </button>
-            <h3 className="text-[#0B3558] text-3xl font-bold mt-4 w-2/3">
-              Schedule a personalized demo
-            </h3>
-            <div className="flex justify-center items-center gap-4 mt-10">
-              <p className="text-6xl font-bold text-[#0B3558]">20m</p>
-              <span className="text-xl w-5/6 pt-6 font- text-[#0B3558]">
-                users worldwide
-              </span>
-            </div>
-            <span className="mt-5 text-[#0B3558] font-semi-bold text-xl flex gap-3 items-center pb- border-b-2 border-[#006BFF] "></span>
-            <div className="flex justify-center items-center gap-4 mt-10">
-              <p className="text-6xl font-bold text-[#0B3558]">100k</p>
-              <span className="text-xl w-5/6 pt-6 font- text-[#0B3558]">
-                companies use Calendly
-              </span>
-            </div>
-            <span className="mt-5 text-[#0B3558] font-semi-bold text-xl flex gap-3 items-center pb- border-b-2 border-[#006BFF] "></span>
-            <div className="flex justify-center items-center gap-4 mt-10">
-              <p className="text-6xl font-bold text-[#0B3558]">230+</p>
-              <span className="text-xl  pt-6 font- text-[#0B3558]">
-                countries with active users
-              </span>
-            </div>
-            <span className="mt-5 text-[#0B3558] font-semi-bold text-xl flex gap-3 items-center pb- border-b-2 border-[#006BFF] "></span>
-            <span className="mt-9 text-[#006BFF] font-semi-bold text-xl flex gap-3 items-center ">
-              contact support
-              <FaArrowRight />
-            </span>
-          </div>
-          <div className="bg- w ">
-            <div className="bg-[#FFFFFF]  rounded-2xl m-5 shadow-2xl p-8 border-[#E7EDF6]">
-              <h3 className="text-4xl text-[#0B3558]">Let's Chat</h3>
-              <p className="text-md mt-3 text-[#0B3558] font-light">
-                A Calendly expert will reach out to discuss your needs.
-              </p>
-              <EnterpriseForm />
-            </div>
-          </div>
-        </div>
+    
+
+<div className="bg-[#F8F9FB] mt-20 p-2 flex ">
+  <div className="flex p-10 pt-[50px] w-full gap-10">
+    <div className="w-1/2">
+      <button className="bg-[#E6F0FF] text-[#3672CA] rounded-2xl px-3 py-1 mt-2">
+        Contact our sales team
+      </button>
+      <h3 className="text-[#0B3558] text-3xl font-bold mt-4 w-2/3">
+        Schedule a personalized demo
+      </h3>
+
+      <div className="flex justify-start items-center gap-4 mt-10">
+        <p className="text-6xl font-bold text-[#0B3558]">20m</p>
+        <span className="text-xl w-5/6 pt-6 font-light text-[#0B3558]">
+          users worldwide
+        </span>
       </div>
+      <span className="mt-5 text-[#0B3558] font-semi-bold text-xl flex gap-3 items-center pb- border-b-2 border-[#006BFF]" />
+
+      <div className="flex justify-start items-center gap-4 mt-10">
+        <p className="text-6xl font-bold text-[#0B3558]">100k</p>
+        <span className="text-xl w-5/6 pt-6 font-light text-[#0B3558]">
+          companies use Calendly
+        </span>
+      </div>
+      <span className="mt-5 text-[#0B3558] font-semi-bold text-xl flex gap-3 items-center pb- border-b-2 border-[#006BFF]" />
+
+      <div className="flex justify-start items-center gap-4 mt-10">
+        <p className="text-6xl font-bold text-[#0B3558]">230+</p>
+        <span className="text-xl w-5/6 pt-6 font-light text-[#0B3558]">
+          countries with active users
+        </span>
+      </div>
+      <span className="mt-5 text-[#0B3558] font-semi-bold text-xl flex gap-3 items-center pb- border-b-2 border-[#006BFF]" />
+
+      <span className="mt-9 text-[#006BFF] font-semi-bold text-xl flex gap-3 items-center">
+        contact support
+        <FaArrowRight />
+      </span>
+    </div>
+
+    <div className="w-1/2">
+      <div className="bg-[#FFFFFF] rounded-2xl m-5 shadow-2xl p-8 border-[#E7EDF6]">
+        <h3 className="text-4xl text-[#0B3558]">Let's Chat</h3>
+        <p className="text-md mt-3 text-[#0B3558] font-light">
+          A Calendly expert will reach out to discuss your needs.
+        </p>
+        <EnterpriseForm />
+      </div>
+    </div>
+  </div>
+</div>
+
     </>
   );
 };

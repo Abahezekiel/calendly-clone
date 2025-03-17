@@ -18,7 +18,7 @@ const IntegratePlans = () => {
                 title="See all 90+ integrations"
                 afterIcon={<AiOutlineExport className="" />}
                 type="secondary"
-                extraStyles="border-none"
+                extraStyles="border-none hover:bg-slate-50"
               />
             </div>
           </div>{" "}
@@ -38,7 +38,7 @@ const IntegratePlans = () => {
               <Button
                 afterIcon={<FiInfo />}
                 type="secondary"
-                extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-black font-light text-md border-none"
+                extraStyles="hover:bg-slate-50 rounded-md w-full flex items-center justify-center text-black font-light text-md border-none"
               />
             </div>
           </div>
@@ -46,28 +46,28 @@ const IntegratePlans = () => {
             <Button
               afterIcon={<FaCheckCircle />}
               type="secondary"
-              extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+              extraStyles="hover:bg-slate-50 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
             />
           </div>
           <div className="w-48 flex justify-center items-center  border-l">
             <Button
               afterIcon={<FaCheckCircle />}
               type="secondary"
-              extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+              extraStyles="hover:bg-slate-50 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
             />
           </div>
           <div className="w-48 flex justify-center items-center border-l">
             <Button
               afterIcon={<FaCheckCircle />}
               type="secondary"
-              extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+              extraStyles="hover:bg-slate-50 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
             />
           </div>
           <div className="w-48 flex justify-center items-center border-l">
             <Button
               afterIcon={<FaCheckCircle />}
               type="secondary"
-              extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+              extraStyles="hover:bg-slate-50 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
             />
           </div>
         </div>
@@ -82,7 +82,7 @@ const IntegratePlans = () => {
               <Button
                 afterIcon={<FiInfo />}
                 type="secondary"
-                extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-black font-light text-md border-none"
+                extraStyles="hover:bg-slate-50 rounded-md w-full flex items-center justify-center text-black font-light text-md border-none"
               />
             </div>
           </div>
@@ -91,21 +91,21 @@ const IntegratePlans = () => {
             <Button
               afterIcon={<FaCheckCircle />}
               type="secondary"
-              extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+              extraStyles="hover:bg-slate-50 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
             />
           </div>
           <div className="w-48 flex justify-center items-center  border-l">
             <Button
               afterIcon={<FaCheckCircle />}
               type="secondary"
-              extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+              extraStyles="hover:bg-slate-50 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
             />
           </div>
           <div className="w-48 flex justify-center items-center border-l">
             <Button
               afterIcon={<FaCheckCircle />}
               type="secondary"
-              extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+              extraStyles="hover:bg-slate-50 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
             />
           </div>
         </div>
@@ -122,7 +122,7 @@ const IntegratePlans = () => {
               <Button
                 afterIcon={<FiInfo />}
                 type="secondary"
-                extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-black font-light text-md border-none"
+                extraStyles="hover:bg-slate-50 rounded-md w-full flex items-center justify-center text-black font-light text-md border-none"
               />
             </div>
           </div>
@@ -131,21 +131,21 @@ const IntegratePlans = () => {
             <Button
               afterIcon={<FaCheckCircle />}
               type="secondary"
-              extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+              extraStyles="hover:bg-slate-50 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
             />
           </div>
           <div className="w-48 flex justify-center items-center border-l">
             <Button
               afterIcon={<FaCheckCircle />}
               type="secondary"
-              extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+              extraStyles="hover:bg-slate-50 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
             />
           </div>
           <div className="w-48 flex justify-center items-center border-l">
             <Button
               afterIcon={<FaCheckCircle />}
               type="secondary"
-              extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+              extraStyles="hover:bg-slate-50 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
             />
           </div>
         </div>
@@ -162,7 +162,7 @@ const IntegratePlans = () => {
               <Button
                 afterIcon={<FiInfo />}
                 type="secondary"
-                extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-black font-light text-md border-none"
+                extraStyles="hover:bg-slate-50 rounded-md w-full flex items-center justify-center text-black font-light text-md border-none"
               />
             </div>
           </div>
@@ -171,21 +171,21 @@ const IntegratePlans = () => {
             <Button
               afterIcon={<FaCheckCircle />}
               type="secondary"
-              extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+              extraStyles="hover:bg-slate-50 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
             />
           </div>
           <div className="w-48 flex justify-center items-center  border-l">
             <Button
               afterIcon={<FaCheckCircle />}
               type="secondary"
-              extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+              extraStyles="hover:bg-slate-50 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
             />
           </div>
           <div className="w-48 flex justify-center items-center border-l">
             <Button
               afterIcon={<FaCheckCircle />}
               type="secondary"
-              extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+              extraStyles="hover:bg-slate-50 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
             />
           </div>
         </div>
@@ -202,7 +202,7 @@ const IntegratePlans = () => {
               <Button
                 afterIcon={<FiInfo />}
                 type="secondary"
-                extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-black font-light text-md border-none"
+                extraStyles="hover:bg-slate-50 rounded-md w-full flex items-center justify-center text-black font-light text-md border-none"
               />
             </div>
           </div>
@@ -211,21 +211,21 @@ const IntegratePlans = () => {
             <Button
               afterIcon={<FaCheckCircle />}
               type="secondary"
-              extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+              extraStyles="hover:bg-slate-50 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
             />
           </div>
           <div className="w-48 flex justify-center items-center border-l">
             <Button
               afterIcon={<FaCheckCircle />}
               type="secondary"
-              extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+              extraStyles="hover:bg-slate-50 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
             />
           </div>
           <div className="w-48 flex justify-center items-center border-l">
             <Button
               afterIcon={<FaCheckCircle />}
               type="secondary"
-              extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+              extraStyles="hover:bg-slate-50 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
             />
           </div>
         </div>
@@ -243,7 +243,7 @@ const IntegratePlans = () => {
               <Button
                 afterIcon={<FiInfo />}
                 type="secondary"
-                extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-black font-light text-md border-none"
+                extraStyles="hover:bg-slate-50 rounded-md w-full flex items-center justify-center text-black font-light text-md border-none"
               />
             </div>
           </div>
@@ -252,21 +252,21 @@ const IntegratePlans = () => {
             <Button
               afterIcon={<FaCheckCircle />}
               type="secondary"
-              extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+              extraStyles="hover:bg-slate-50 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
             />
           </div>
           <div className="w-48 flex justify-center items-center  border-l">
             <Button
               afterIcon={<FaCheckCircle />}
               type="secondary"
-              extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+              extraStyles="hover:bg-slate-50 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
             />
           </div>
           <div className="w-48 flex justify-center items-center border-l">
             <Button
               afterIcon={<FaCheckCircle />}
               type="secondary"
-              extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+              extraStyles="hover:bg-slate-50 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
             />
           </div>
         </div>
@@ -282,7 +282,7 @@ const IntegratePlans = () => {
               <Button
                 afterIcon={<FiInfo />}
                 type="secondary"
-                extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-black font-light text-md border-none"
+                extraStyles="hover:bg-slate-50 rounded-md w-full flex items-center justify-center text-black font-light text-md border-none"
               />
             </div>
           </div>
@@ -292,14 +292,14 @@ const IntegratePlans = () => {
             <Button
               afterIcon={<FaCheckCircle />}
               type="secondary"
-              extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+              extraStyles="hover:bg-slate-50 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
             />
           </div>
           <div className="w-48 flex justify-center items-center border-l">
             <Button
               afterIcon={<FaCheckCircle />}
               type="secondary"
-              extraStyles="hover:bg-white rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
+              extraStyles="hover:bg-slate-50 rounded-md w-full flex items-center justify-center text-blue-500 text-lg border-none"
             />
           </div>
         </div>

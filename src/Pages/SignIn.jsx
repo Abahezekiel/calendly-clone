@@ -15,7 +15,7 @@ const SignInPage = () => {
 
   return (
     <div className=" h-screen bg-red-500 flex justify-center items-center">
-      <SignIn redirectUrl={"/"} />
+      <SignIn redirectUrl={"/Dashboard"} />
     </div>
   );
 };

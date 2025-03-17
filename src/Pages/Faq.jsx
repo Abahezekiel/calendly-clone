@@ -87,7 +87,7 @@ const FAQ = () => {
               <p className="bg-blue-100 rounded-full h-12 w-12 flex items-center justify-center">
                 <MdKeyboardArrowRight
                   className={`text-blue-950 transform ${
-                    isOpen[faq.id] ? "rotate-240" : ""
+                    isOpen[faq.id] ? "-rotate-90" : ""
                   }`}
                 />
               </p>

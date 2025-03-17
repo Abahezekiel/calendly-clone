@@ -381,14 +381,14 @@ const IntegrationsDash = () => {
             <Button
               title="Discover (41)"
               type="secondary"
-              extraStyles="hover:bg-white rounded-md w- flex items-center justify-center text-black font-light text-md border-none "
+              extraStyles="hover:bg-slate-50 rounded-md w- flex items-center justify-center text-black font-light text-md border-none "
             />
           </div>
           <div className=" flex items-center justify-center">
             <Button
               title="Manage (2)"
               type="secondary"
-              extraStyles="hover:bg-white  border-none "
+              extraStyles="hover:bg-slate-50  border-none "
             />
           </div>
         </div>

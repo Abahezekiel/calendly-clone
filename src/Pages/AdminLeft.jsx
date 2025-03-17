@@ -15,7 +15,7 @@ import { FaRegQuestionCircle } from "react-icons/fa";
 import { LuArrowRightToLine, LuUsers } from "react-icons/lu";
 
 const AdminLeft = () => {
-  const [clickedIndex, setClickedIndex] = useState(null);
+  const [clickedIndex, setClickedIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const navigate = useNavigate();
 
@@ -57,7 +57,7 @@ const AdminLeft = () => {
       title: "Scheduling settings",
       icon: null,
       extraStyles: "w-56 flex text-gray-500 font-bold mt-4",
-      isDisabled: true,  // Disable this button
+      isDisabled: true, // Disable this button
     },
     {
       title: "Permissions",
@@ -113,7 +113,7 @@ const AdminLeft = () => {
             beforeIcon={<PiSpeedometer className="w-5 h-5" />}
             type="secondary"
             extraStyles="px-2 py-2 hover:bg-transparent rounded-full w-60 flex items-center justify-center text-blue-500 font-semibold border-none text-lg"
-            onClick={() => handleButtonClick(10)} 
+            onClick={() => handleButtonClick()}
           />
           <button className="bg-blue-950 px-2 py-2 h-8 p-2 text-white rounded-md text-sm font-semibold flex items-center">
             New
@@ -127,21 +127,20 @@ const AdminLeft = () => {
 
         {/* Scrollable Buttons List */}
         <div className="overflow-y-auto max-h-[calc(100vh-150px)] p-4 text-md font-semibold">
-  {buttonItems.map((item, index) => (
-    <Button
-      key={index}
-      title={item.title}
-      beforeIcon={item.icon}
-      onClick={() => handleButtonClick(index)} // Set the clicked index
-      type="neutral"
-      extraStyles={`${item.extraStyles} ${
-        clickedIndex === index ? "bg-blue-50 rounded-md" : ""
-      } ${item.isDisabled ? "opacity-50 cursor-not-allowed" : ""}
+          {buttonItems.map((item, index) => (
+            <Button
+              key={index}
+              title={item.title}
+              beforeIcon={item.icon}
+              onClick={() => handleButtonClick(index)} // Set the clicked index
+              type="neutral"
+              extraStyles={`${item.extraStyles} ${
+                clickedIndex === index ? "bg-blue-50 rounded-md" : ""
+              } ${item.isDisabled ? "opacity-50 cursor-not-allowed" : ""}
         ${item.title === "Scheduling settings" ? "cursor-auto" : ""}`} // Add cursor-auto for Scheduling settings
-    />
-  ))}
-</div>
-
+            />
+          ))}
+        </div>
       </div>
 
       <CreateModal
@@ -155,6 +154,3 @@ const AdminLeft = () => {
 };
 
 export default AdminLeft;
-
-
-

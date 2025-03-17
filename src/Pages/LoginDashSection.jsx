@@ -27,21 +27,21 @@ const LoginDashSection = () => {
             <Button
               title="Single sign-on"
               type="secondary"
-              extraStyles="hover:bg-white rounded-md w- flex items-center justify-center text-black font-light text-md border-none "
+              extraStyles="hover:bg-slate-50 rounded-md w- flex items-center justify-center text-black font-light text-md border-none "
             />
           </div>
           <div className=" flex items-center justify-center">
             <Button
               title="User provisioning"
               type="secondary"
-              extraStyles="hover:bg-white  border-none "
+              extraStyles="hover:bg-slate-50  border-none "
             />
           </div>
           <div className=" flex items-center justify-center">
             <Button
               title="Domain control"
               type="secondary"
-              extraStyles="hover:bg-white  border-none "
+              extraStyles="hover:bg-slate-50  border-none "
             />
           </div>
         </div>
@@ -72,7 +72,7 @@ const LoginDashSection = () => {
         <Button
           title="Contact us"
           type="secondary"
-          extraStyles="h- hover:bg-transparent rounded-full  flex items-center justify-center text-white font-light text-sm bg-blue-600 p-3"
+          extraStyles="hover:blue-500 rounded-full  flex items-center justify-center text-white font-light text-sm bg-blue-600 p-3"
         />
       </div>
     </div>

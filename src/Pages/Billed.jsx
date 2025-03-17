@@ -117,7 +117,11 @@ const Billed = () => {
 
             {/* <p className="text-blue-950 font-bold pt-8 text-2xl">{plan.price}</p> */}
 
-            <button className="bg-blue-600 px-10 py-3 text-white rounded-md mt-8 font-semibold whitespace-nowrap">
+            <button
+              className={`${
+                index === 0 ? "bg-blue-950" : "bg-blue-600"
+              } px-10 py-3 text-white rounded-md mt-8 font-semibold whitespace-nowrap`}
+            >
               {plan.buttonText}
             </button>
 
@@ -129,12 +133,13 @@ const Billed = () => {
                 <div key={idx} className="flex gap-2 items-center pt-2">
                   <IoMdCheckmark className="text-lg" />{" "}
                   {/* Adjust the icon size */}
-                  <p className="underline decoration-dotted text-sm">{feature}</p>
+                  <p className="underline decoration-dotted text-sm">
+                    {feature}
+                  </p>
                 </div>
               ))}
             </div>
 
-           
             {index === 2 && (
               <div className="p-3 gap-2 text-sm mt-8 bg-blue-50 rounded-lg last:mt-auto">
                 <Button
@@ -145,21 +150,23 @@ const Billed = () => {
                 <div>
                   <Button
                     title="Single Sign-on."
-                    beforeIcon={<GoPlus className="w-6 h-6 font-extrabold text-blue-600" />}
+                    beforeIcon={
+                      <GoPlus className="w-6 h-6 font-extrabold text-blue-600" />
+                    }
                     type="secondary"
                     extraStyles=" rounded-full flex   text-blue-900 font-light text-sm border-none"
                   />
                 </div>
                 <div>
                   <p className="text-sm font-light">
-                    Simplify team access with SAML-based SSO through Okta, Azure,
-                    OneLogin, Auth0, and more
+                    Simplify team access with SAML-based SSO through Okta,
+                    Azure, OneLogin, Auth0, and more
                   </p>
                 </div>
               </div>
             )}
 
-              {plan.name !== "Free" && (
+            {plan.name !== "Free" && (
               <div
                 className={` flex-grow flex items-end ${
                   plan.name === "Teams" ? "" : ""

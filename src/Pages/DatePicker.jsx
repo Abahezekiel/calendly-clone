@@ -38,7 +38,7 @@ const DatePicker = () => {
         <Button
           title="Delete"
           type="secondary"
-          extraStyles="bg-orange-700  border-none rounded-full   text-white font-semibold text-sm  p-3"
+          extraStyles="hover:bg-orange-700 bg-orange-700  border-none rounded-full   text-white font-semibold text-sm  p-3"
         />
       </div>
     </div>

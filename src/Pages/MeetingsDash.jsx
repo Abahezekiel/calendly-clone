@@ -30,7 +30,7 @@ const MeetingsDash = ({ clickedIndex }) => {
               title="My Calendly"
               afterIcon={<MdKeyboardArrowDown className="w-4 h-4" />}
               type="secondary"
-              extraStyles="hover:bg-white rounded-md w- flex items-center justify-center text-black font-light text-md border-blue-200 "
+              extraStyles="hover:bg-slate-50 rounded-md w- flex items-center justify-center text-black font-light text-md border-blue-200 "
             />
           </div>
           <div className=" flex items-center justify-center">
@@ -38,7 +38,7 @@ const MeetingsDash = ({ clickedIndex }) => {
               title="Show buffers"
               afterIcon={<IoMdInformationCircleOutline className="w-4 h-4" />}
               type="secondary"
-              extraStyles="hover:bg-white  border-none "
+              extraStyles="hover:bg-slate-50  border-none "
             />
             <p>
               <ToggleSwitch />
@@ -55,23 +55,23 @@ const MeetingsDash = ({ clickedIndex }) => {
          <Button
             title="Upcoming"
             type="secondary"
-            extraStyles="hover:bg-white  border-none font-light"
+            extraStyles="hover:bg-slate-50  border-none font-light"
           />
           <Button
             title="Pending"
             type="secondary"
-            extraStyles="hover:bg-white  border-none font-light"
+            extraStyles="hover:bg-slate-50  border-none font-light"
           />
           <Button
             title="Past"
             type="secondary"
-            extraStyles="hover:bg-white  border-none font-light"
+            extraStyles="hover:bg-slate-50  border-none font-light"
           />
           <Button
             title="Date Range"
             afterIcon={<MdArrowDropDown className="w-4 h-4" />}
             type="secondary"
-            extraStyles="hover:bg-white  border-none "
+            extraStyles="hover:bg-slate-50  border-none "
           />
          </div>
          <div className="flex gap-2 pr-4">
@@ -98,7 +98,7 @@ const MeetingsDash = ({ clickedIndex }) => {
          <Button
               title="View Events Types"
               type="secondary"
-              extraStyles="bg-blue-600 text-white   h-8 font-semibold w-54 text-sm "
+              extraStyles="hover:bg-blue-500 bg-blue-600 text-white   h-8 font-semibold w-54 text-sm "
             />
          </div>
         </div>

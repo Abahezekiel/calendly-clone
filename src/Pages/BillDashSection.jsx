@@ -57,7 +57,7 @@ const BillDashSection = () => {
           title="You're on the free plan. Your trial ended on 7 February 2025."
          
           type="secondary"
-          extraStyles=" rounded-full flex   text-black font-light text-sm border-none "
+          extraStyles="hover:bg-transparent rounded-full flex   text-black font-light text-sm border-none "
         />
        
       </div>

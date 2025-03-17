@@ -21,7 +21,7 @@ function App() {
   return (
     <>
       {/* Only render Nav and Footer if the current route is not '/Dashboard' */}
-      {location.pathname !== '/Dashboard' && <Nav />}
+      {location.pathname !== '/dashboard' && <Nav />}
       
       <Routes>
         <Route path="/" element={<Home />} />
@@ -38,7 +38,7 @@ function App() {
       </Routes>
       
       {/* Only render Footer if the current route is not '/Dashboard' */}
-      {location.pathname !== '/Dashboard' && <Footer />}
+      {location.pathname !== '/dashboard' && <Footer />}
     </>
   );
 }

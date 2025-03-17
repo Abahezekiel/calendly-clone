@@ -47,7 +47,7 @@ const ContactsDash = () => {
             title="Book your first meeting"
             beforeIcon={<GoPlus className="w-4 h-4 font-thin" />}
             type="secondary"
-            extraStyles="h- hover:bg-transparent rounded-full  flex items-center justify-center text-white font-light text-sm bg-blue-600"
+            extraStyles="hover:bg-blue-500 rounded-full  flex items-center justify-center text-white font-light text-sm bg-blue-600"
           />
         </div>
         <div className=" w-1/2  ">

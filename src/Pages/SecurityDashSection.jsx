@@ -23,14 +23,14 @@ const SecurityDashSection = () => {
             <Button
               title="Data deletion"
               type="secondary"
-              extraStyles="hover:bg-white rounded-md w- flex items-center justify-center text-black font-light text-md border-none "
+              extraStyles="hover:bg-slate-50 rounded-md w- flex items-center justify-center text-black font-light text-md border-none "
             />
           </div>
           <div className=" flex items-center justify-center">
             <Button
               title="Activity log"
               type="secondary"
-              extraStyles="hover:bg-white  border-none "
+              extraStyles="hover:bg-slate-50  border-none "
             />
           </div>
         </div>
@@ -53,7 +53,7 @@ const SecurityDashSection = () => {
         <Button
           title="Once you delete information, you won't be able to recover it"
           type="secondary"
-          extraStyles="bg-orange-200 w-full border-none rounded-md   text-black font-light text-sm  p-4"
+          extraStyles="hover:bg-orange-200 bg-orange-200 w-full border-none rounded-md   text-black font-light text-sm  p-4"
         />
       </div>
       <div className=" pl-7 pt-5  mb-3 w-3/4">
@@ -84,7 +84,7 @@ const SecurityDashSection = () => {
         <Button
           title="Delete"
           type="secondary"
-          extraStyles="bg-orange-700  border-none rounded-full   text-white font-semibold text-sm  p-3"
+          extraStyles="hover:bg-orange-700 bg-orange-700  border-none rounded-full   text-white font-semibold text-sm  p-3"
         />
         <p className="w-3/4 pb-5 border-b border-gray-400 "></p>
       </div>

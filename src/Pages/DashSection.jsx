@@ -37,7 +37,7 @@ const analyticTemplates = [
 const DashSection = () => {
   return (
     <>
-      <div className="w-full">
+      <div className="w-full bg-[red]">
         <DashNav />
 
         <div className="shadow-md border-2 w- border-blue-600 m-7 bg-blue-50 rounded-md flex items-center justify-between p-6">

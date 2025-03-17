@@ -29,7 +29,7 @@ const AvailabilityDash = ({ clickedIndex }) => {
         <Button
           title="Availability"
           type="secondary"
-          extraStyles="h- hover:bg-transparent rounded-full w- flex items-center justify-center text-black font-bold text-2xl border-none"
+          extraStyles="hover:bg-slate-50 rounded-full w- flex items-center justify-center text-black font-bold text-2xl border-none"
         />
       </div>
       <div className="flex  items-center  ml-3 mr-8 border-b border-gray-200 ">
@@ -38,21 +38,21 @@ const AvailabilityDash = ({ clickedIndex }) => {
             <Button
               title="Default Schedule"
               type="secondary"
-              extraStyles="hover:bg-white rounded-md w- flex items-center justify-center text-black font-light text-md border-none "
+              extraStyles="hover:bg-slate-50 rounded-md w- flex items-center justify-center text-black font-light text-md border-none "
             />
           </div>
           <div className=" flex items-center justify-center">
             <Button
               title="Holidays"
               type="secondary"
-              extraStyles="hover:bg-white  border-none "
+              extraStyles="hover:bg-slate-50  border-none "
             />
           </div>
           <div className=" flex items-center justify-center">
             <Button
               title="Calendar Settings"
               type="secondary"
-              extraStyles="hover:bg-white  border-none "
+              extraStyles="hover:bg-slate-50  border-none "
             />
           </div>
         </div>
@@ -64,7 +64,7 @@ const AvailabilityDash = ({ clickedIndex }) => {
               <Button
                 title="Default Schedule"
                 type="secondary"
-                extraStyles="hover:bg-white  border-none font-light"
+                extraStyles="hover:bg-slate-50  border-none font-light"
               />
             </div>
             <div className="flex gap-2  bg-gray-100 rounded-lg p-1 text-blue-950">
@@ -86,7 +86,7 @@ const AvailabilityDash = ({ clickedIndex }) => {
             <Button
               beforeIcon={<HiSpeakerphone className="w-4 h-4" />}
               type="secondary"
-              extraStyles="bg-none  border-none "
+              extraStyles="hover:bg-blue-100 bg-none  border-none "
             />
             <p className="flex gap-2 items-center">
               Updating your schedule here will update it on{" "}
@@ -108,7 +108,7 @@ const AvailabilityDash = ({ clickedIndex }) => {
               title="Weekly Hours"
               beforeIcon={<FaRotate className="w-4 h-4" />}
               type="secondary"
-              extraStyles="bg-none  border-none items-center "
+              extraStyles="hover:bg-slate-50   border-none items-center "
             />
             <p className="pl-2 font-light">
               Set when you are typically available for meetings
@@ -119,7 +119,7 @@ const AvailabilityDash = ({ clickedIndex }) => {
               title="Date-specific hours"
               beforeIcon={<FiCalendar className="w-4 h-4" />}
               type="secondary"
-              extraStyles="bg-none  border-none items-center "
+              extraStyles="hover:bg-slate-50  border-none items-center "
             />
             <p className="pl-2 font-light">Adjust hours for specific days</p>
           </div>
@@ -128,7 +128,7 @@ const AvailabilityDash = ({ clickedIndex }) => {
               title="Hours"
               beforeIcon={<GoPlus className="w-4 h-4" />}
               type="secondary"
-              extraStyles="bg-none  border h-8  items-center "
+              extraStyles="hover:bg-slate-50  border h-8  items-center "
             />
           </div>
         </div>

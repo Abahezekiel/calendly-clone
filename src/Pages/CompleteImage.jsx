@@ -39,7 +39,7 @@ const CompleteImage = () => {
         <img
           src="https://images.ctfassets.net/k0lk9kiuza3o/6xveJVYC5HOuyIs0duRvHA/2e53d2c7c8ece478bf2c682eb6e0fa89/legal-and-security.png?q=85&fm=webp"
           alt=""
-          className="rounded-3xl"
+          className="rounded-3xl transition-transform transform hover:scale-110 duration-500"
         />
         <p className="text-[#0B3558] font-bold mt-6 text-xl">
           Complete legal and security reviews
@@ -58,7 +58,7 @@ const CompleteImage = () => {
         <img
           src="https://images.ctfassets.net/k0lk9kiuza3o/3EwAWbTQmnirlcIMiAiC3U/29bc4d1f9c5c6d312b6019094f4eb44e/set-up-account-for-scale.png?q=85&fm=webp"
           alt=""
-          className="rounded-3xl"
+          className="rounded-3xl transition-transform transform hover:scale-110 duration-500"
         />
         <p className="text-[#0B3558] font-bold mt-6 text-xl">
           Set up your account for scale
@@ -77,7 +77,7 @@ const CompleteImage = () => {
         <img
           src="https://images.ctfassets.net/k0lk9kiuza3o/6oBwjyiGqyr19KFMgKQ7uD/7b3efeb9276d763ad77eaba6de6b3c1d/establish-and-hit-goals.png?q=85&fm=webp"
           alt=""
-          className="rounded-3xl"
+          className="rounded-3xl transition-transform transform hover:scale-110 duration-500"
         />
         <p className="text-[#0B3558] font-bold mt-6 text-xl">
           Establish and hit your goals
@@ -96,7 +96,7 @@ const CompleteImage = () => {
         <img
           src="https://images.ctfassets.net/k0lk9kiuza3o/7MkmYwCJAv7EUTJTKBLPhI/280dc0edf3a9e9e02d80d296f8b2b451/skip-the-line-if-anything-comes-up.png?q=85&fm=webp"
           alt=""
-          className="rounded-3xl"
+          className="rounded-3xl transition-transform transform hover:scale-110 duration-500"
         />
         <p className="text-[#0B3558] font-bold mt-6 text-xl">
           Skip the line if anything comes up

@@ -4,8 +4,8 @@ import Button from "../Components/button/Button";
 
 const ResourceModal = () => {
   return (
-    <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-full pb-10 pt-0 bg-slate-100">
-      <div className="pb-10 bg-white shadow-md rounded-b-md m-7 grid grid-cols-4">
+    <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-full  bg-red-100 z-20">
+      <div className=" bg-white shadow-md rounded-b-md ml-7 mr-7 grid grid-cols-4">
         <div className="  p-8">
           <p className="text-gray-400 ">LEARN</p>
 

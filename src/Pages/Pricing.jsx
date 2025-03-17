@@ -23,14 +23,21 @@ const Pricing = () => {
       setIsSticky(false);
     }
   };
-
+  
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
+    const throttleScroll = () => {
+      // Throttle scroll event to every 100ms (or adjust as needed)
+      clearTimeout(window.scrollTimeout);
+      window.scrollTimeout = setTimeout(handleScroll, 100);
+    };
+    
+    window.addEventListener("scroll", throttleScroll);
+  
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", throttleScroll);
     };
   }, []);
+  
 
   return (
     <div className="w-full pb-10 pt-20 bg-slate-100">
@@ -38,7 +45,7 @@ const Pricing = () => {
         Pick the perfect plan for your team
       </p>
 
-      <div className="flex justify-end text-sm items-center pt-10 gap-2 mr-10 w-">
+      <div className="flex justify-end text-sm items-center pt-10 gap-2 mr-10 ">
         <p className="text-blue-500">Billed monthly</p>
         <p className="border-black border-l pl-2 text-blue-950">
           Billed yearly
@@ -46,17 +53,20 @@ const Pricing = () => {
         <Button
           title="Save up to 20%"
           type="secondary"
-          extraStyles="bg-gray-300 rounded-full flex items-center justify-center text-blue-900 font-light text-xs border-none h-6"
+          extraStyles="bg-gray-300 hover:bg-gray-300 rounded-full flex items-center justify-center text-blue-900 font-light text-xs border-none h-6"
         />
       </div>
 
       <Billed />
 
-      <div className="flex gap-4 bg-white mt-20 pt-32 p-7">
-        <div
-          id="features"
-          className={`w-96 ${isSticky ? "sticky" : ""}`}
-        >
+      <div
+      id="features"
+      className={`flex gap-4 bg-white mt-20 p-7 pt-32 ${
+        isSticky ? "sticky top-20 z-20 shadow-sm transition-all ease-in-out duration-300 " : ""
+      }`}
+      
+    >
+        <div id="features" className="w-96">
           <p className="text-blue-500 font-normal text-xl">FEATURES</p>
           <p className="text-blue-950 font-bold text-3xl pt-3">
             Features by plan
@@ -79,7 +89,7 @@ const Pricing = () => {
           <Button
             title="Upgrade to the Standard "
             type="secondary"
-            extraStyles="bg-blue-600 rounded-md flex items-center justify-center text-white font-light text-sm border-none"
+            extraStyles="bg-blue-600 hover:bg-blue-500 rounded-md flex items-center justify-center text-white font-light text-sm border-none"
           />
         </div>
         <div className="bg-slate-50 w-72 border-b border-gray-200 flex flex-col items-center justify-center pb-3">
@@ -90,7 +100,7 @@ const Pricing = () => {
           <Button
             title="Upgrade to the Teams "
             type="secondary"
-            extraStyles="bg-blue-600 rounded-md flex items-center justify-center text-white font-light text-sm border-none"
+            extraStyles="bg-blue-600 hover:bg-blue-500 rounded-md flex items-center justify-center text-white font-light text-sm border-none"
           />
         </div>
         <div className="bg-slate-50 w-72 border-b border-gray-200 flex flex-col items-center justify-center pb-3">
@@ -101,7 +111,7 @@ const Pricing = () => {
           <Button
             title="Talk to sales "
             type="secondary"
-            extraStyles="bg-blue-600 rounded-md flex items-center justify-center text-white font-light text-sm border-none"
+            extraStyles="bg-blue-600 hover:bg-blue-500 rounded-md flex items-center justify-center text-white font-light text-sm border-none"
           />
         </div>
       </div>

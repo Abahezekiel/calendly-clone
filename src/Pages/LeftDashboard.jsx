@@ -3,21 +3,16 @@ import Logo from "./Logo";
 import Button from "../Components/button/Button";
 import { MdKeyboardDoubleArrowLeft } from "react-icons/md";
 import { GoPlus } from "react-icons/go";
-import { RiFlowChart, RiLinkM, RiVipCrown2Line } from "react-icons/ri";
-import { SlCalender } from "react-icons/sl";
-import { LuClock3 } from "react-icons/lu";
-import { IoMdContacts } from "react-icons/io";
-import { GrAppsRounded } from "react-icons/gr";
-import { CiDollar, CiRoute } from "react-icons/ci";
-import { HiOutlineChartBarSquare } from "react-icons/hi2";
-import { FaRegQuestionCircle } from "react-icons/fa";
 import RightDashboard from "./RightDashboard";
 import CreateModal from "./CreateModal";
+import useButtonItems from "../Components/useButtonItems";
 
 const LeftDashboard = () => {
-  const [clickedIndex, setClickedIndex] = useState(null);
+  const [clickedIndex, setClickedIndex] = useState(0);
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const { buttonItems } = useButtonItems(isCollapsed);
 
   // Toggle the collapsed state
   const handleCollapseToggle = () => {
@@ -28,138 +23,12 @@ const LeftDashboard = () => {
     setIsModalOpen(!isModalOpen);
   };
 
-  const buttonItems = [
-    {
-      title: "Event Types",
-      icon: (
-        <RiLinkM
-          className={`w-4 h-4 font-semibold ${isCollapsed ? "mb-3" : ""}`}
-        />
-      ),
-      extraStyles: isCollapsed
-        ? "w-10 flex text-blue-900"
-        : "w-56 flex text-blue-900",
-    },
-    {
-      title: "Meetings",
-      icon: (
-        <SlCalender
-          className={`w-4 h-4 font-semibold ${isCollapsed ? "mb-3" : ""}`}
-        />
-      ),
-      extraStyles: "w-56 flex text-blue-900 mt-4",
-    },
-    {
-      title: "Availability",
-      icon: (
-        <LuClock3
-          className={`w-4 h-4 font-semibold ${isCollapsed ? "mb-3" : ""}`}
-        />
-      ),
-      extraStyles: isCollapsed
-        ? "w-10 flex text-blue-900 mt-4 pb-4 border-b border-blue-100 rounded-none"
-        : "w-56 flex text-blue-900 mt-4 pb-4 border-b border-blue-100 rounded-none",
-    },
-    {
-      title: "Contacts",
-      icon: (
-        <IoMdContacts
-          className={`w-4 h-4 font-semibold ${isCollapsed ? "mb-3" : ""}`}
-        />
-      ),
-      extraStyles: isCollapsed
-        ? "w-10 flex text-blue-900  mt-4"
-        : "w-56 flex text-blue-900 mt-4 ",
-    },
-    {
-      title: "Workflows",
-      icon: (
-        <RiFlowChart
-          className={`w-4 h-4 font-semibold ${isCollapsed ? "mb-3" : ""}`}
-        />
-      ),
-      extraStyles: isCollapsed
-        ? "w-10 flex text-blue-900  mt-4"
-        : "w-56 flex text-blue-900 mt-4 ",
-    },
-    {
-      title: "Integration & Apps",
-      icon: (
-        <GrAppsRounded
-          className={`w-4 h-4 font-semibold ${isCollapsed ? "mb-3" : ""}`}
-        />
-      ),
-      extraStyles: isCollapsed
-        ? "w-10 flex text-blue-900  mt-4"
-        : "w-56 flex text-blue-900 mt-4 ",
-    },
-    {
-      title: "Routing",
-      icon: (
-        <CiRoute
-          className={`w-4 h-4 font-semibold ${isCollapsed ? "mb-3" : ""}`}
-        />
-      ),
-      extraStyles: "w-56 flex text-blue-900 mt-4",
-      extraStyles: isCollapsed
-        ? "w-10 flex text-blue-900  mt-4"
-        : "w-56 flex text-blue-900 mt-4 ",
-    },
-    {
-      title: "Upgrade Plan",
-      icon: (
-        <CiDollar
-          className={`w-4 h-4 font-bold ${
-            isCollapsed ? "mb-3 " : "text-blue-900"
-          }`}
-        />
-      ),
-      extraStyles: isCollapsed
-        ? "w-10 flex text-blue-900  mt-4 "
-        : "w-56 flex text-blue-900 mt-4 bg-blue-100 rounded-lg border border-blue-300",
-    },
-    {
-      title: "Analytics",
-      icon: (
-        <HiOutlineChartBarSquare
-          className={`w-4 h-4 font-semibold ${isCollapsed ? "mb-3" : ""}`}
-        />
-      ),
-      extraStyles: isCollapsed
-        ? "w-10 flex text-blue-900  mt-4"
-        : "w-56 flex text-blue-900 mt-4 ",
-    },
-    {
-      title: "Admin Center",
-      icon: (
-        <RiVipCrown2Line
-          className={`w-4 h-4 font-semibold ${isCollapsed ? "mb-3" : ""}`}
-        />
-      ),
-      extraStyles: isCollapsed
-        ? "w-10 flex text-blue-900  mt-4"
-        : "w-56 flex text-blue-900 mt-4 ",
-    },
-    {
-      title: "Help",
-      icon: (
-        <FaRegQuestionCircle
-          className={`w-4 h-4 font-semibold ${isCollapsed ? "mb-3" : ""}`}
-        />
-      ),
-      extraStyles: isCollapsed
-        ? "w-10 flex text-blue-900  mt-4"
-        : "w-56 flex text-blue-900 mt-4 ",
-    },
-  ];
-
   return (
     <>
       <div
-        className={`w-${
-          isCollapsed ? "16" : "1/5"
-        }  border-r border-blue-100 transition-all duration-300`}
-      >
+         className={`fixed top-0 left-0 w-${isCollapsed ? "16" : "1/5"} 
+         h-screen border-r border-blue-100  transition-all duration-300`}
+>
         <div className="flex justify-between items-center pt-5 p-3 ">
           {/* Logo and collapsed state handling */}
           {isCollapsed ? (

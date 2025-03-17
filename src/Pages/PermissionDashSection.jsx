@@ -23,7 +23,7 @@ const PermissionDashSection = () => {
           <Button
             title="Permissions"
             type="secondary"
-            extraStyles="h- hover:bg-transparent rounded-full w- flex items-center justify-center text-black font-bold text-2xl border-none"
+            extraStyles="hover:bg-slate-50 rounded-full w- flex items-center justify-center text-black font-bold text-2xl border-none"
           />
         </div>
         <div className="flex items-center ml-3 mr-8 border-b border-gray-200">
@@ -32,21 +32,21 @@ const PermissionDashSection = () => {
               <Button
                 title="Event types"
                 type="secondary"
-                extraStyles="hover:bg-white rounded-md w- flex items-center justify-center text-black font-light text-md border-none "
+                extraStyles="hover:bg-slate-50e rounded-md w- flex items-center justify-center text-black font-light text-md border-none "
               />
             </div>
             <div className=" flex items-center justify-center">
               <Button
                 title="Workflows"
                 type="secondary"
-                extraStyles="hover:bg-white border-none "
+                extraStyles="hover:bg-slate-50e border-none "
               />
             </div>
             <div className=" flex items-center justify-center">
               <Button
                 title="Invitations"
                 type="secondary"
-                extraStyles="hover:bg-white border-none "
+                extraStyles="hover:bg-slate-50e border-none "
               />
               <button className="bg-blue-950 px-2 py-2 h-8 p-2 text-white rounded-md text-sm font-semibold flex items-center">
                 New
@@ -97,11 +97,11 @@ const PermissionDashSection = () => {
         </div>
 
         {selectedOption === "noOne" && (
-          <div className="btn border w-3/4 border-gray-200 m-7 bg-orange-50 rounded-md flex items-center justify-between p-5">
+          <div className="btn border w-3/4 border-gray-200 m-7 bg-orange-50 hover:bg-orange-50 rounded-md flex items-center justify-between p-5">
             <Button
               title="No one will be able to create new shared event types. Existing shared event types will not be affected."
               type="secondary"
-              extraStyles="rounded-full flex text-black font-light text-sm border-none"
+              extraStyles="rounded-full flex text-black font-light text-sm border-none hover:bg-orange-50"
             />
           </div>
         )}
@@ -117,7 +117,7 @@ const PermissionDashSection = () => {
           <Button
             title="Save"
             type="secondary"
-            extraStyles="bg-blue-500 border- rounded-full text-white font-semibold text-sm p-3"
+            extraStyles="hover:bg-blue-500 border-none bg-blue-500 border- rounded-full text-white font-semibold text-sm p-3"
           />
         </div>
       </div>
